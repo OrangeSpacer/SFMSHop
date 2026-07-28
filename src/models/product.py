@@ -46,11 +46,12 @@ class Product:
         self.price = price
 
     
-
     def get_total_price(self):
         return self.price * self.quantity
 
     def get_category():
+        pass
+    def add_shipping():
         pass
 
     def __lt__(self, other):

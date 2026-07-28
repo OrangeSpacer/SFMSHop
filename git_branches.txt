@@ -1,0 +1,8 @@
+* develop
+  feature/add-discount-system
+  feature/add-inventory-management
+  feature/add-shipping
+  remotes/origin/develop
+  remotes/origin/feature/add-discount-system
+  remotes/origin/feature/add-inventory-management
+  remotes/origin/feature/add-shipping

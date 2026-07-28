@@ -1,0 +1,14 @@
+* e461642 (origin/feature/add-shipping, feature/add-shipping) Добавлен метод calculate_shipping в Product
+* e4d95dc (HEAD -> develop) Добавлен метод get_category в Product
+| * 58b553e (origin/feature/add-inventory-management, feature/add-inventory-management) Добавлены методы управления складом в класс Product
+|/  
+* c756dcd (origin/develop) Доработка основных классов product,user,order
+| *   e4e3493 (refs/stash) WIP on feature/add-discount-system: ac9a34b Добавлена система скидок в класс Product
+| |\  
+| | * 4138278 index on feature/add-discount-system: ac9a34b Добавлена система скидок в класс Product
+| |/  
+| * ac9a34b (origin/feature/add-discount-system, feature/add-discount-system) Добавлена система скидок в класс Product
+|/  
+* 38163e1 Добавлены модели SFMShop
+* f01b8ec Добавлен базовый код SFMShop
+* a669ade инициализировал проект

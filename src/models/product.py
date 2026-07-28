@@ -50,6 +50,8 @@ class Product:
     def get_total_price(self):
         return self.price * self.quantity
 
+    def get_category():
+        pass
 
     def __lt__(self, other):
         if not isinstance(other, Product):

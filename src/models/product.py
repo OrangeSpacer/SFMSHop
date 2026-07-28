@@ -48,7 +48,7 @@ class Product:
     
 
     def get_total_price(self):
-        return self.price * self.quantity
+        return round(self.price * self.quantity, 2)
 
     def get_category():
         pass

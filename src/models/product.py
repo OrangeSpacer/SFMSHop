@@ -1,8 +1,8 @@
-from src.models.exceptions import NegativePriceError, InsufficientStockError, InvalidQuantityError
+from src.models.exceptions import NegativePriceError, InsufficientStockError, InvalidQuantityError, ValidationError
 
 
 class Product:
-    def __init__(self, price, quantity,name):
+    def __init__(self, name, price, quantity):
         self.price = price
         self.name = name
         self.quantity = quantity
@@ -38,6 +38,13 @@ class Product:
             )
         self.quantity -= amount
         return self.quantity
+
+    def set_price(self,price):
+        if(price < 0):
+            raise ValidationError("Цена не может быть отрицательной")
+
+        self.price = price
+
     
 
     def get_total_price(self):
@@ -56,3 +63,6 @@ class Product:
 
     def __str__(self):
         return f"Товар: {self.name}, Цена: {self.price} руб., Количество: {self.quantity}"
+
+    def __repr__(self):
+            return f"Product('{self.name}', {self.price}, {self.quantity})"

@@ -41,7 +41,10 @@ class Product:
     
 
     def get_total_price(self):
-        return self.price * self.quantity
+        return self.price * self.quantity\
+
+    def apply_discount():
+        pass
 
 
     def __lt__(self, other):

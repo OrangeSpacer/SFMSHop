@@ -1,0 +1,58 @@
+commit e4d95dc5a6764cdf9ca5d5b6bfdc853d06d976e9 (HEAD -> develop)
+Author: OrangeSpacer <maxaev.art@yandex.ru>
+Date:   Tue Jul 28 21:37:43 2026 +0300
+
+    Добавлен метод get_category в Product
+
+ src/models/product.py | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit c756dcdc7417c1f5dbef8843d55c948db6ad9020 (origin/develop)
+Author: OrangeSpacer <maxaev.art@yandex.ru>
+Date:   Tue Jul 28 21:30:04 2026 +0300
+
+    Доработка основных классов product,user,order
+
+ src/main.py           | 69 +++++++++++++++++++++++++++++----------------------
+ src/models/order.py   | 12 ++++++---
+ src/models/product.py | 16 +++++++++---
+ src/models/user.py    | 10 +++++++-
+ 4 files changed, 70 insertions(+), 37 deletions(-)
+
+commit 38163e15d6e973d23a9e9f8c4497df36f40d2140
+Author: OrangeSpacer <maxaev.art@yandex.ru>
+Date:   Tue Jul 28 17:32:49 2026 +0300
+
+    Добавлены модели SFMShop
+
+ src/models/__init__.py   |  0
+ src/models/exceptions.py | 35 +++++++++++++++++++++++++++++
+ src/models/order.py      | 23 +++++++++++++++++++
+ src/models/payment.py    | 24 ++++++++++++++++++++
+ src/models/product.py    | 58 ++++++++++++++++++++++++++++++++++++++++++++++++
+ src/models/user.py       | 29 ++++++++++++++++++++++++
+ 6 files changed, 169 insertions(+)
+
+commit f01b8ecb8fb4af420f91b3f92fd35b06655369f1
+Author: OrangeSpacer <maxaev.art@yandex.ru>
+Date:   Tue Jul 28 17:32:25 2026 +0300
+
+    Добавлен базовый код SFMShop
+
+ src/__init__.py               |  0
+ src/main.py                   | 50 ++++++++++++++++++++++++++++++
+ src/utils/__init__.py         |  0
+ src/utils/orders_processor.py | 71 +++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 121 insertions(+)
+
+commit a669adef776de2879da681c20858dec8a785f01e
+Author: OrangeSpacer <maxaev.art@yandex.ru>
+Date:   Tue Jul 28 17:26:42 2026 +0300
+
+    инициализировал проект
+
+ .gitignore                       | 1 +
+ README.md                        | 7 +++++++
+ data/orders.txt                  | 5 +++++
+ data/processed_orders_report.txt | 4 ++++
+ 4 files changed, 17 insertions(+)
